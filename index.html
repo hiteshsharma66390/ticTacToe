@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tcac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+    <div class="title"><h1>Tic-Tac-Toe</h1></div>
+    <div class="banner-container">
+        <p id="winner-text"></p>
+    </div>
+    <div class="game-container">
+        <table>
+            <tr>
+                <td onclick="mark(this,0,0)"></td>
+                <td onclick="mark(this,0,1)"></td>
+                <td onclick="mark(this,0,2)"></td>
+            </tr>
+            <tr>
+                <td onclick="mark(this,1,0)"></td>
+                <td onclick="mark(this,1,1)"></td>
+                <td onclick="mark(this,1,2)"></td>
+            </tr>
+            <tr>
+                <td onclick="mark(this,2,0)"></td>
+                <td onclick="mark(this,2,1)"></td>
+                <td onclick="mark(this,2,2)"></td>
+            </tr>
+        </table>        
+    </div>
+    <div class="button-container">
+        <button id="reset-button" onclick="reset()">Reset</button>
+    </div>
+    
+</body>
+</html>
